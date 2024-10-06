@@ -36,7 +36,8 @@ public class Main {
         Booking booking1 = new Booking(LocalDate.of(2021,7,1),LocalDate.of(
                 2021,7,19),room1,List.of(customer1),true);
         Booking booking2 = new Booking(LocalDate.of(2021,9,1,LocalDate.of(
-                2021,9,14),room3,List.of();
+                2021,9,14),room3,List.of(); // zde problém,
+                                                                    // jak tam zapsat customer1 a customer2
 
 
 
