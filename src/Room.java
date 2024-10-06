@@ -22,20 +22,20 @@ public class Room {
         this.numberOfBeds = numberOfBeds;
     }
 
-    public boolean isBalcon() {
+    public boolean getIsBalcon() {
         return isBalcon;
     }
 
     public void setBalcon(boolean balcon) {
-        isBalcon = balcon;
+        this.isBalcon = isBalcon;
     }
 
-    public boolean isSeaView() {
+    public boolean getIsSeaView() {
         return isSeaView;
     }
 
     public void setSeaView(boolean seaView) {
-        isSeaView = seaView;
+        this.isSeaView = isSeaView;
     }
 
     public double getPrice() {
