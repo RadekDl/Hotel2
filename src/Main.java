@@ -59,6 +59,8 @@ public class Main {
         bookings.add(booking1);
         bookings.add(booking2);
 
+        System.out.println("\n výpis pomocí cyklu for \n");
+
         for (Booking bookingPrint : bookings) {
             System.out.println("Začátek rezervace, "+bookingPrint.getReservationOn()+
                     "\n Konec rezervace, "+ bookingPrint.getReservationOff()+"\npokoje "+
