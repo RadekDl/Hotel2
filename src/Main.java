@@ -51,8 +51,8 @@ public class Main {
 
         System.out.println("\n Rezervace pokoje číslo "+room3.getRoomOfNumber()+" je "+ "od "
                 +booking2.getReservationOn()+" do "+booking2.getReservationOff()+" klientem/ty"+","+" "
-                + booking2.getCustomer().getFirst().getSecondName()+", "+
-                booking2.getCustomer().get(1).getSecondName()+" a pobyt je pracovní "+booking2.isStay()+"\n");
+                +booking2.getCustomer().getFirst().getSecondName()+", "
+                +booking2.getCustomer().get(1).getSecondName()+" a pobyt je pracovní "+booking2.isStay()+"\n");
 
 
         List<Booking> bookings = new ArrayList<>();

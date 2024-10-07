@@ -30,7 +30,10 @@ public class Customer {
         this.birthday = birthday;
     }
 
+
+
     public Customer(String firstName, String secondName, LocalDate birthday) {
+
         this.firstName = firstName;
         this.secondName = secondName;
         this.birthday = birthday;
