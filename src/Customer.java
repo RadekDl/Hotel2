@@ -6,6 +6,16 @@ public class Customer {
         private String secondName;
         private LocalDate birthday;
 
+
+    public Customer(String firstName, String secondName, LocalDate birthday) {
+
+        this.firstName = firstName;
+        this.secondName = secondName;
+        this.birthday = birthday;
+    }
+
+
+
     public String getFirstName() {
         return firstName;
     }
@@ -32,11 +42,6 @@ public class Customer {
 
 
 
-    public Customer(String firstName, String secondName, LocalDate birthday) {
 
-        this.firstName = firstName;
-        this.secondName = secondName;
-        this.birthday = birthday;
-    }
 }
 

@@ -6,6 +6,19 @@ public class Room {
         private boolean isSeaView; // výhled na moře
         private double price;    // cena za pokoj
 
+
+
+    public Room(int roomOfNumber, int numberOfBeds, boolean isBalcon, boolean isSeaView, double price) {
+        this.roomOfNumber = roomOfNumber;
+        this.numberOfBeds = numberOfBeds;
+        this.isBalcon = isBalcon;
+        this.isSeaView = isSeaView;
+        this.price = price;
+    }
+
+
+
+
     public int getRoomOfNumber() {
         return roomOfNumber;
     }
@@ -46,12 +59,6 @@ public class Room {
         this.price = price;
     }
 
-    public Room(int roomOfNumber, int numberOfBeds, boolean isBalcon, boolean isSeaView, double price) {
-        this.roomOfNumber = roomOfNumber;
-        this.numberOfBeds = numberOfBeds;
-        this.isBalcon = isBalcon;
-        this.isSeaView = isSeaView;
-        this.price = price;
-    }
+
 }
 

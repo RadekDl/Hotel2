@@ -9,6 +9,18 @@ public class Booking {
         private List<Customer> customer;
         private boolean stay;
 
+
+        public Booking(LocalDate reservationOn, LocalDate reservationOff, Room room, List<Customer> customer,
+                       boolean stay) {
+                this.reservationOn = reservationOn;
+                this.reservationOff = reservationOff;
+                this.room = room;
+                this.customer = customer;
+                this.stay = stay;
+        }
+
+
+
         public LocalDate getReservationOn() {
                 return reservationOn;
         }
@@ -50,13 +62,7 @@ public class Booking {
         }
 
 
-        public Booking(LocalDate reservationOn, LocalDate reservationOff, Room room, List<Customer> customer, boolean stay) {
-                this.reservationOn = reservationOn;
-                this.reservationOff = reservationOff;
-                this.room = room;
-                this.customer = customer;
-                this.stay = stay;
-        }
+
 }
 
 
