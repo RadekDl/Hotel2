@@ -11,6 +11,8 @@ public class Main {
         Customer customer2 = new Customer("Jan", "Dvořáček", LocalDate.of(
                 1995, 5, 5));
 
+        customer2.setBirthday(LocalDate.of(1995,4,5));
+
         List<Customer> customers = new ArrayList<>();
         customers.add(customer1);
         customers.add(customer2);
