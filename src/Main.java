@@ -2,6 +2,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Main {
     public static void main(String[] args) {
 
@@ -39,14 +40,15 @@ public class Main {
                 2021,9,14),room3,List.of(customer1,customer2),false);                                                                   // jak tam zapsat customer1 a customer2
 
 
-        System.out.println("\n Rezervace pokoje číslo "+room1.getRoomOfNumber()+" je "+ "od "
-                +booking1.getReservationOn()+" do "+booking1.getReservationOff()+" klientem "
-                + booking1.getCustomer().add(customer1)+" pracovní pobyt "+ booking1.isStay()+"\n");
+        System.out.println("Rezervace pokoje číslo "+ room1.getRoomOfNumber()+" je od "+
+                            booking1.getReservationOn()+" do "+ booking1.getReservationOff()+
+                            " klientem, "+ booking1.getCustomer().getFirst().getSecondName()+
+                            "\n a pobyt je pracovní "+ booking1.isStay());
 
         System.out.println("Rezervace pokoje číslo "+room3.getRoomOfNumber()+" je "+ "od "
-                +booking2.getReservationOn()+" do "+booking2.getReservationOff()+" klientem "
-                + booking2.getCustomer().add(customer1)+booking2.getCustomer().add(customer2)+
-                " pracovní pobyt "+booking2.isStay());
+                +booking2.getReservationOn()+" do "+booking2.getReservationOff()+" klientem/ty"+","+" "
+                + booking2.getCustomer().getFirst().getSecondName()+", "+
+                booking2.getCustomer().get(1).getSecondName()+" a pobyt je pracovní "+booking2.isStay());
 
     }
 }
