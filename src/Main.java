@@ -61,7 +61,8 @@ public class Main {
 
         for (Booking bookingPrint : bookings) {
             System.out.println("Začátek rezervace, "+bookingPrint.getReservationOn()+
-                    "\n Konec rezervace, "+ bookingPrint.getReservationOff()+"\n zákazníkem, "+
+                    "\n Konec rezervace, "+ bookingPrint.getReservationOff()+"\npokoje "+
+                    bookingPrint.getRoom().getRoomOfNumber()+"\n zákazníkem, "+
                     bookingPrint.getCustomer());
         }
 
