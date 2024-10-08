@@ -6,7 +6,7 @@ public class Booking {
         private LocalDate reservationOn;    //datum rezervace od
         private LocalDate reservationOff;    //datum rezervace do
         private Room room;
-        private List<Customer> customer;
+        private List <Customer> customer;
         private boolean stay;
 
 
@@ -45,8 +45,11 @@ public class Booking {
                 this.room = room;
         }
 
-        public List<Customer> getCustomer() {
+        public List<Customer> getCustomers() {
                 return customer;
+        }
+        public Customer getMainCustomer() {
+                return customer.getLast();
         }
 
         public void setCustomer(List<Customer> customer) {

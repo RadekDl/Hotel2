@@ -46,13 +46,13 @@ public class Main {
 
         System.out.println("\n Rezervace pokoje číslo "+ room1.getRoomOfNumber()+" je od "+
                             booking1.getReservationOn()+" do "+ booking1.getReservationOff()+
-                            " klientem, "+ booking1.getCustomer().getFirst().getSecondName()+
+                            " klientem, "+ booking1.getCustomers().getFirst().getSecondName()+
                             "\n a pobyt je pracovní "+ booking1.isStay());
 
         System.out.println("\n Rezervace pokoje číslo "+room3.getRoomOfNumber()+" je "+ "od "
                 +booking2.getReservationOn()+" do "+booking2.getReservationOff()+" klientem/ty"+","+" "
-                +booking2.getCustomer().getFirst().getSecondName()+", "
-                +booking2.getCustomer().get(1).getSecondName()+" a pobyt je pracovní "+booking2.isStay()+"\n");
+                +booking2.getCustomers().getFirst().getSecondName()+", "
+                +booking2.getCustomers().get(1).getSecondName()+" a pobyt je pracovní "+booking2.isStay()+"\n");
 
 
         List<Booking> bookings = new ArrayList<>();
@@ -65,8 +65,9 @@ public class Main {
             System.out.println("Začátek rezervace, "+bookingPrint.getReservationOn()+
                     "\n Konec rezervace, "+ bookingPrint.getReservationOff()+"\npokoje "+
                     bookingPrint.getRoom().getRoomOfNumber()+"\n zákazníkem, "+
-                    bookingPrint.getCustomer());
+                    bookingPrint.getMainCustomer().getSecondName());
         }
+
 
 
 
