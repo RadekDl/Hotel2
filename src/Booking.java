@@ -49,7 +49,7 @@ public class Booking {
                 return customer;
         }
         public Customer getMainCustomer() {
-                return customer.getLast();
+                return customer.getLast() ;
         }
 
         public void setCustomer(List<Customer> customer) {
