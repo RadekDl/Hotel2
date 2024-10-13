@@ -21,6 +21,10 @@ public class Main {
         Room room2 = new Room(2, 1, true, true, 1000);
         Room room3 = new Room(3, 3, false, true, 2400);
 
+        List<Room> roomList = new ArrayList<>();
+        roomList.add(room1);
+        roomList.add(room2);
+        roomList.add(room3);
 
         System.out.println("\n"+ customer1.getFirstName()+" "+ customer1.getSecondName()+ " "+
                 customer1.getBirthday());
@@ -67,11 +71,6 @@ public class Main {
                     bookingPrint.getRoom().getRoomOfNumber()+"\n zákazníkem, "+
                     bookingPrint.getMainCustomer().getSecondName());
         }
-
-
-
-
-
 
     }
 }

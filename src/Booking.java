@@ -19,6 +19,9 @@ public class Booking {
                 this.stay = stay;
         }
 
+        public Booking() {
+
+        }
 
 
         public LocalDate getReservationOn() {

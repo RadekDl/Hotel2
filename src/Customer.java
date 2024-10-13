@@ -13,7 +13,9 @@ public class Customer {
         this.secondName = secondName;
         this.birthday = birthday;
     }
-
+    public Customer(String firstName, String secondName) {
+        this(firstName,secondName,LocalDate.of(1000,1,1));
+    }
 
 
     public String getFirstName() {
