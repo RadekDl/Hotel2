@@ -8,6 +8,8 @@ public class Booking {
         private Room room;
         private List <Customer> customer;
         private boolean stay;
+        private int index;
+        private static int nextIndex = 1;
 
 
         public Booking(LocalDate reservationOn, LocalDate reservationOff, Room room, List<Customer> customer,
@@ -17,6 +19,15 @@ public class Booking {
                 this.room = room;
                 this.customer = customer;
                 this.stay = stay;
+                this.index = nextIndex++;
+        }
+
+        public int getIndex() {
+                return index;
+        }
+
+        public void setIndex(int index) {
+                this.index = index;
         }
 
         public Booking() {

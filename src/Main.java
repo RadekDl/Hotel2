@@ -1,6 +1,7 @@
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ServiceConfigurationError;
 
 
 public class Main {
@@ -16,6 +17,8 @@ public class Main {
         List<Customer> customers = new ArrayList<>();
         customers.add(customer1);
         customers.add(customer2);
+
+
 
         Room room1 = new Room(1, 1, true, true, 1000);
         Room room2 = new Room(2, 1, true, true, 1000);
@@ -65,12 +68,31 @@ public class Main {
 
         System.out.println("\n výpis pomocí cyklu for \n");
 
+       /* for (Booking bookingPrint : bookings) {
+            System.out.println("Začátek rezervace, "+bookingPrint.getReservationOn()+
+                    "\n Konec rezervace, "+ bookingPrint.getReservationOff()+"\npokoje "+
+                    bookingPrint.getRoom().getRoomOfNumber()+"\n zákazníkem, "+
+                    bookingPrint.getMainCustomer().getSecondName());
+        }*/
+
+
+
+            bookings.add(new Booking(LocalDate.of(2024, 11, 1),
+                    LocalDate.of(2024, 11, 14), room1, List.of(customer1), true));
+
+        System.out.println("\nčíslo rezervovaného pokoje dle indexu v seznamu je pokoj číslo "+bookings.get(1).getRoom().getRoomOfNumber());
+
+
         for (Booking bookingPrint : bookings) {
             System.out.println("Začátek rezervace, "+bookingPrint.getReservationOn()+
                     "\n Konec rezervace, "+ bookingPrint.getReservationOff()+"\npokoje "+
                     bookingPrint.getRoom().getRoomOfNumber()+"\n zákazníkem, "+
                     bookingPrint.getMainCustomer().getSecondName());
         }
+
+
+        System.out.println("konec");
+
 
     }
 }
