@@ -13,8 +13,11 @@ public class BookingManager {
         return booking;
     }
     public void setBooking(List<Booking> booking) {
-        this.booking = new Booking(LocalDate.of(2024,11,1),room,List.of(customer));
+        this.booking = new Booking(LocalDate.of(2024,11,1),room,
+                List.of(customer.setFirstName("Jan",customer.setSecondName("Nový"))),true);
+
     }
+
 
 
 
